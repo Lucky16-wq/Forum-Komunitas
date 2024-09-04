@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - [School Name] Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="unname.jpg" alt="[School Name] Logo" class="logo">
+            <h2>Welcome Back</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="button" class="login-btn" id="loginBtn">Sign in</button>
+    
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            // Kembali ke halaman sebelumnya
+            window.history.back();
+        });
+    </script>
+                <p class="create-account">Already have an account? <a href="login.html" id="loginBtn">Log in</a></p>
+    
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah perilaku default dari link
+            window.history.back(); // Kembali ke halaman sebelumnya
+        });
+    </script>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

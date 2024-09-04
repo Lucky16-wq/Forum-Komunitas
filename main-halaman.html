@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="root-page-container">
+        <header id="header" class="header">
+            <nav class="navbar" role="navigation">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="main.html" aria-label="Kembali ke beranda">
+                            <img src="images/unnam.jpg" alt="Logo Hoyolab Clone">
+                        </a>
+                    </div>
+                    <a href="main.html" class="nav-item current" aria-current="page">Home</a>
+                    <a href="forum.html" class="nav-item">Forum</a>
+                    <a href="news.html" class="nav-item">News</a>
+                </div>
+                <div class="header-main">
+                    <form class="search-form" action="/search" method="GET" aria-label="Form Pencarian">
+                        <select name="category" class="search-category" aria-label="Kategori pencarian">
+                            <option value="all">Semua Kategori</option>
+                            <option value="news">Berita</option>
+                            <option value="forum">Forum</option>
+                            <option value="updates">Pembaruan</option>
+                        </select>
+                        <input type="text" name="query" class="search-input" placeholder="Cari..." aria-label="Masukkan kata kunci pencarian">
+                        <button type="submit" class="search-button">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form> 
+                </div>
+                <div class="header-right">
+                    <!--Berisi foto profil user-->
+                </div>
+            </nav>
+        </header>        
+        <main class="root-page-container__content">
+            <div class="root-page-container__left root-page-container__left--bg">
+                <div class="main-page layout__main">
+                    <div class="home">
+                        <div class="page-header page-header-md page-header-block">
+                            <div class="page-header-mask">
+                                <div class="page-header-wrp">
+                                    <div class="page-header-content-line">
+                                        <div id="switch-tab" class="switch-tab-container">
+                                            <div class="switch-tab">
+                                                <a href="#rekomendasi" class="tab-link tab-link-active" aria-current="page">Rekomendasi</a>
+                                                <a href="#terbaru" class="tab-link" aria-current="false">Terbaru</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content-container">
+                                            <div id="rekomendasi" class="tab-content active">
+                                                <div class="home-container">
+                                                    <div id="rekomendasi-articles" class="article-list__body">
+                                                        <!-- Artikel untuk Rekomendasi akan dimuat di sini -->
+                                                    </div>
+                                                    <div class="spinner" id="rekomendasi-spinner">
+                                                        <i class="fa fa-spinner fa-spin"></i> Memuat lebih banyak artikel...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="terbaru" class="tab-content">
+                                                <div class="home-container">
+                                                    <div id="terbaru-articles" class="article-list__body">
+                                                        <!-- Artikel untuk Terbaru akan dimuat di sini -->
+                                                    </div>
+                                                    <div class="spinner" id="terbaru-spinner">
+                                                        <i class="fa fa-spinner fa-spin"></i> Memuat lebih banyak artikel...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                                                                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="root-page-container__right">
+                <div class="layout__sub">
+                    <h2>Additional Content</h2>
+                    <p>Tambahkan konten di sini seperti iklan, tautan, atau informasi lainnya.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2024 Welcome. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Menghubungkan script.js -->
+</body>
+</html>

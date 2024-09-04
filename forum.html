@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum | Beranda</title>
+    <link rel="stylesheet" href="main-halaman.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="root-page-container">
+        <header class="header-wrp">
+            <div class="navbar">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="main-halaman.html"><img src="images/unnam.jpg" alt="Hoyolab Clone Logo"></a>
+                    </div>
+                    <div class="nav-menu">
+                        <a href="main-halaman.html" class="nav-item">Home</a>
+                        <a href="forum.html" class="nav-item current">Forum</a>
+                        <a href="news.html" class="nav-item">News</a>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <div class="search-combo">
+                        <select id="searchCategory">
+                            <option value="all">All</option>
+                            <option value="forums">Forums</option>
+                            <option value="news">News</option>
+                            <option value="profiles">Profiles</option>
+                            <!-- Tambahkan opsi lain sesuai kebutuhan -->
+                        </select>
+                        <input type="search" id="searchBox" placeholder="Search..." aria-label="Search">
+                        <button type="submit" aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="header-right">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-page-layout">
+            <div class="main-page-layout__left">
+                <div class="main-page-layout__left--bg">
+                    <!-- Tambahkan konten sidebar di sini -->
+                    <h2>Sidebar</h2>
+                    <p>Konten sidebar akan ditempatkan di sini.</p>
+                </div>
+            </div>
+
+            <div class="main-page-layout__main">
+                <main>
+                    <section class="hero">
+                        <h1>Forum</h1>
+                        <p>Discuss strategies, tips, and more with other gamers.</p>
+                    </section>
+                    <section class="forum-posts">
+                        <article>
+                            <h2>Discussion Title 1</h2>
+                            <p>Discussion content or teaser for post 1.</p>
+                            <a href="#">Read More</a>
+                        </article>
+                        <article>
+                            <h2>Discussion Title 2</h2>
+                            <p>Discussion content or teaser for post 2.</p>
+                            <a href="#">Read More</a>
+                        </article>
+                        <!-- Tambahkan postingan lain sesuai kebutuhan -->
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Welcome. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Sertakan file JavaScript eksternal -->
+    <script src="main-halaman.js"></script>
+</body>
+</html>

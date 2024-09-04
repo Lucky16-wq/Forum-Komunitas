@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Beranda</title>
+    <link rel="stylesheet" href="main-halaman.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header-wrp">
+        <div class="navbar">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="main-halaman.html"><img src="images/unnam.jpg" alt="Hoyolab Clone Logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <a href="main-halaman.html" class="nav-item">Home</a>
+                    <a href="forum.html" class="nav-item">Forum</a>
+                    <a href="news.html" class="nav-item">News</a>
+                    <!-- Removed Profile link -->
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="search-combo">
+                    <select id="searchCategory">
+                        <option value="all">All</option>
+                        <option value="forums">Forums</option>
+                        <option value="news">News</option>
+                        <option value="profiles">Profiles</option>
+                        <!-- Tambahkan opsi lain sesuai kebutuhan -->
+                    </select>
+                    <input type="search" id="searchBox" placeholder="Search..." aria-label="Search">
+                    <button type="submit" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="user-menu">
+                    <a href="profile.html"><i class="icon-user"></i> Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>User Profile</h1>
+            <p>Some information about the user.</p>
+        </section>
+        <section class="profile-info">
+            <article>
+                <h2>Username</h2>
+                <p>Some information about the user.</p>
+                <p>Email: user@example.com</p>
+                <!-- Add more profile details here -->
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Welcome. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
